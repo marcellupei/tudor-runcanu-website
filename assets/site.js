@@ -1,6 +1,6 @@
 /* ============================================================
-   site.js  --  reads content.js and builds the pages.
-   You should NOT need to edit this file. Edit content.js.
+   site.js  --  citește content.js și construiește paginile.
+   NU trebuie să editezi acest fișier. Editează content.js.
    ============================================================ */
 
 (function () {
@@ -30,7 +30,7 @@
   function videoEmbed(url) {
     var id = ytId(url);
     if (!id) {
-      return '<div class="empty">Adauga un link YouTube valid in content.js</div>';
+      return '<div class="empty">Adaugă un link YouTube valid în content.js</div>';
     }
     return '<div class="video"><iframe src="https://www.youtube.com/embed/' + id +
            '" title="Video YouTube" allowfullscreen loading="lazy" ' +
@@ -83,7 +83,7 @@
     $all("[data-demos]").forEach(function (box) {
       var demos = (get(n_path(box, "data-demos")) || []);
       if (!demos.length) {
-        box.innerHTML = '<div class="empty">Demo-urile vor aparea aici.</div>';
+        box.innerHTML = '<div class="empty">Demo-urile vor apărea aici.</div>';
         return;
       }
       box.innerHTML = demos.map(function (d) {
@@ -92,7 +92,7 @@
           media = videoEmbed(d.src);
         } else {
           media = '<audio controls preload="none" src="' + esc(d.src) + '">' +
-                  'Browserul tau nu poate reda audio.</audio>';
+                  'Browserul tău nu poate reda audio.</audio>';
         }
         return '<div class="demo"><h3>' + esc(d.title) + '</h3>' +
                (d.note ? '<p class="note">' + esc(d.note) + '</p>' : '') +
@@ -106,7 +106,7 @@
     if (!box) return;
     var items = S.audiobooks || [];
     if (!items.length) {
-      box.innerHTML = '<div class="empty">Audiobook-urile de pe canal vor aparea aici.</div>';
+      box.innerHTML = '<div class="empty">Audiobook-urile de pe canal vor apărea aici.</div>';
       return;
     }
     box.innerHTML = items.map(function (a) {

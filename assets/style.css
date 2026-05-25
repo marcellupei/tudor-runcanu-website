@@ -15,7 +15,7 @@
   --line:      #e7e3da;
   --line-dk:   #d6d0c4;
   --maxw:      1120px;
-  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -57,7 +57,7 @@ audio:focus-visible {
 
 /* ---------- type ---------- */
 h1, h2, h3 { font-weight: 400; line-height: 1.04; letter-spacing: -0.01em; }
-h1, h2 { font-family: var(--serif); }
+h1, h2 { font-family: var(--serif); font-weight: 500; }
 h1 { font-size: clamp(3rem, 7.5vw, 5.8rem); }
 h2 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); }
 h3 {

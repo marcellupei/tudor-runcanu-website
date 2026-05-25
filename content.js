@@ -1,91 +1,91 @@
 /* ============================================================
-   CONTINUTUL SITE-ULUI  --  acesta este SINGURUL fisier
-   pe care trebuie sa il editezi ca sa schimbi textul,
+   CONȚINUTUL SITE-ULUI  --  acesta este SINGURUL fișier
+   pe care trebuie să îl editezi ca să schimbi textul,
    demo-urile audio sau videoclipurile.
 
    Reguli simple:
-   - Textul se scrie intre ghilimele "..."
-   - Fiecare rand dintr-o lista se termina cu virgula ,
-   - Nu sterge acoladele { } sau parantezele [ ]
-   - Dupa ce salvezi, site-ul se actualizeaza singur
+   - Textul se scrie între ghilimele "..."
+   - Fiecare rând dintr-o listă se termină cu virgulă ,
+   - Nu șterge acoladele { } sau parantezele [ ]
+   - După ce salvezi, site-ul se actualizează singur
 
-   Vezi GHID-EDITARE.md pentru pasii completi.
+   Vezi GHID-EDITARE.md pentru pașii completi.
    ============================================================ */
 
 window.SITE = {
 
-  /* ---------- 1. DATELE DE BAZA ---------- */
+  /* ---------- 1. DATELE DE BAZĂ ---------- */
 
   name: "Tudor Runcanu",
-  role: "Artist voice over si narator",
+  role: "Artist voice over și narator",
 
-  // Titlul mare de pe prima pagina
+  // Titlul mare de pe prima pagină
   tagline: "O voce pentru fiecare poveste.",
 
-  // Date de contact -- INLOCUIESTE cu datele reale.
-  // Lasa gol ""  daca nu vrei sa apara un camp.
+  // Date de contact -- ÎNLOCUIEȘTE cu datele reale.
+  // Lasă gol ""  dacă nu vrei să apară un câmp.
   email: "adresa@exemplu.ro",
   phone: "07xx xxx xxx",
-  city: "Romania",
+  city: "România",
 
   // Fotografie portret (apare pe pagina Despre).
-  // Urca fisierul in folderul assets/ si scrie numele aici, ex: "assets/tudor.jpg"
-  // Lasa gol ""  daca nu ai inca o poza -- locul ramane ascuns.
+  // Urcă fișierul în folderul assets/ și scrie numele aici, ex: "assets/tudor.jpg"
+  // Lasă gol ""  dacă nu ai încă o poză -- locul rămâne ascuns.
   photo: "",
 
-  // Linkuri retele sociale -- lasa gol ""  daca nu ai unul
+  // Linkuri rețele sociale -- lasă gol ""  dacă nu ai unul
   youtube:   "https://www.youtube.com/",
   instagram: "",
   facebook:  "",
   linkedin:  "",
 
 
-  /* ---------- 2. PRIMA PAGINA (Acasa) ---------- */
+  /* ---------- 2. PRIMA PAGINĂ (Acasă) ---------- */
 
   heroIntro:
-    "De la spoturi de cateva secunde pana la capitole intregi de carte, " +
-    "lucrez cu vocea ca sa transmit exact ce ai de spus: clar, natural " +
-    "si usor de ascultat.",
+    "De la spoturi de câteva secunde până la capitole întregi de carte, " +
+    "lucrez cu vocea ca să transmit exact ce ai de spus: clar, natural " +
+    "și ușor de ascultat.",
 
 
   /* ============================================================
-     3. COMERCIAL  --  voce pentru reclame, ghiduri si business
+     3. COMERCIAL  --  voce pentru reclame, ghiduri și business
      ============================================================ */
   comercial: {
 
     summary:
-      "Reclame, ghiduri video si materiale de business. Mesajul tau, " +
-      "spus clar si in tonul potrivit pentru brand.",
+      "Reclame, ghiduri video și materiale de business. Mesajul tău, " +
+      "spus clar și în tonul potrivit pentru brand.",
 
     intro:
-      "O reclama buna se aude o data si se tine minte. Inregistrez voce " +
-      "pentru spoturi, video-uri explicative si materiale interne, in tonul " +
-      "potrivit pentru publicul si momentul tau.",
+      "O reclamă bună se aude o dată și se ține minte. Înregistrez voce " +
+      "pentru spoturi, video-uri explicative și materiale interne, în tonul " +
+      "potrivit pentru publicul și momentul tău.",
 
     services: [
       {
         title: "Reclame radio & TV",
-        text: "Spoturi care se retin. Ton energic sau cald, livrare la timp, in formatul de care ai nevoie."
+        text: "Spoturi care se rețin. Ton energic sau cald, livrare la timp, în formatul de care ai nevoie."
       },
       {
         title: "Ghiduri & video explainer",
-        text: "Voce limpede pentru tutoriale, materiale de onboarding si clipuri care explica un produs."
+        text: "Voce limpede pentru tutoriale, materiale de onboarding și clipuri care explică un produs."
       },
       {
-        title: "Prezentari & materiale de business",
-        text: "Naratiune pentru prezentari de companie, video-uri corporate si comunicare interna."
+        title: "Prezentări & materiale de business",
+        text: "Narațiune pentru prezentări de companie, video-uri corporate și comunicare internă."
       },
       {
         title: "E-learning & cursuri",
-        text: "Voce prietenoasa si constanta pentru cursuri online si module de training, oricat de lungi."
+        text: "Voce prietenoasă și constantă pentru cursuri online și module de training, oricât de lungi."
       },
       {
         title: "IVR & mesaje telefonice",
-        text: "Mesaje de intampinare si de ghidare pentru centrale telefonice, inregistrate profesionist."
+        text: "Mesaje de întâmpinare și de ghidare pentru centrale telefonice, înregistrate profesionist."
       },
       {
         title: "Branding audio & podcast",
-        text: "Introduceri, semnaturi sonore si voce pentru identitatea audio a brandului."
+        text: "Introduceri, semnături sonore și voce pentru identitatea audio a brandului."
       }
     ],
 
@@ -94,48 +94,48 @@ window.SITE = {
         title: "Demo reclame",
         kind: "audio",
         src: "audio/demo-reclame.mp3",
-        note: "Spoturi radio si TV, tonuri diferite."
+        note: "Spoturi radio și TV, tonuri diferite."
       },
       {
         title: "Demo explainer & corporate",
         kind: "audio",
         src: "audio/demo-corporate.mp3",
-        note: "Ghiduri video si prezentari de business."
+        note: "Ghiduri video și prezentări de business."
       }
     ]
   },
 
 
   /* ============================================================
-     4. FILM & ANIMATIE  --  dublaj, personaje, documentar
+     4. FILM & ANIMAȚIE  --  dublaj, personaje, documentar
      ============================================================ */
   film: {
 
     summary:
-      "Dublaj, voci de personaj si naratiune pentru film, desen animat " +
-      "si continut video.",
+      "Dublaj, voci de personaj și narațiune pentru film, desen animat " +
+      "și conținut video.",
 
     intro:
-      "Imaginea cere o voce care se potriveste cu ea. Lucrez la dublaj, " +
-      "personaje pentru animatie si naratiune, cu registre si energie " +
-      "variabile, in functie de proiect.",
+      "Imaginea cere o voce care se potrivește cu ea. Lucrez la dublaj, " +
+      "personaje pentru animație și narațiune, cu registre și energie " +
+      "variabile, în funcție de proiect.",
 
     services: [
       {
         title: "Dublaj film & serial",
-        text: "Voce sincronizata cu imaginea, pentru personaje din filme si seriale."
+        text: "Voce sincronizată cu imaginea, pentru personaje din filme și seriale."
       },
       {
-        title: "Voce pentru animatie",
-        text: "Personaje pentru desene animate, jocuri si continut animat, cu registre variate."
+        title: "Voce pentru animație",
+        text: "Personaje pentru desene animate, jocuri și conținut animat, cu registre variate."
       },
       {
-        title: "Naratiune documentar",
-        text: "Voce asezata si credibila pentru documentare si materiale de tip reportaj."
+        title: "Narațiune documentar",
+        text: "Voce așezată și credibilă pentru documentare și materiale de tip reportaj."
       },
       {
         title: "Trailere & promo",
-        text: "Voce cu prezenta pentru trailere, teasere si promo-uri."
+        text: "Voce cu prezență pentru trailere, teasere și promo-uri."
       },
       {
         title: "Voci de personaj",
@@ -148,13 +148,13 @@ window.SITE = {
         title: "Demo dublaj & personaje",
         kind: "audio",
         src: "audio/demo-personaje.mp3",
-        note: "Voci pentru film si animatie."
+        note: "Voci pentru film și animație."
       },
       {
-        title: "Demo naratiune documentar",
+        title: "Demo narațiune documentar",
         kind: "youtube",
         src: "https://www.youtube.com/",
-        note: "Fragment de naratiune."
+        note: "Fragment de narațiune."
       }
     ]
   },
@@ -167,16 +167,16 @@ window.SITE = {
   channelName: "Numele Canalului",
 
   channelSummary:
-    "Carti citite cap-coada, in limba romana, gratuit pe YouTube.",
+    "Cărți citite cap-coadă, în limba română, gratuit pe YouTube.",
 
   channelIntro:
-    "Un canal dedicat cartilor citite cu voce tare, in limba romana. " +
-    "Capitole intregi, povesti si literatura, pentru oricine vrea sa " +
-    "asculte o carte buna.",
+    "Un canal dedicat cărților citite cu voce tare, în limba română. " +
+    "Capitole întregi, povești și literatură, pentru oricine vrea să " +
+    "asculte o carte bună.",
 
   audiobooks: [
     {
-      title: "Titlul cartii sau al capitolului",
+      title: "Titlul cărții sau al capitolului",
       author: "Autorul",
       src: "https://www.youtube.com/"
     },
@@ -192,24 +192,24 @@ window.SITE = {
 
   aboutHeading: "Despre",
   aboutText: [
-    "Lucrez cu vocea pentru ca un text bun merita sa fie si bine spus. " +
-    "Fie ca e vorba de un spot de zece secunde sau de un roman intreg, " +
-    "caut de fiecare data tonul care face mesajul usor de ascultat si de tinut minte.",
+    "Lucrez cu vocea pentru că un text bun merită să fie și bine spus. " +
+    "Fie că e vorba de un spot de zece secunde sau de un roman întreg, " +
+    "caut de fiecare dată tonul care face mesajul ușor de ascultat și de ținut minte.",
 
-    "Imi place sa inteleg intai proiectul: cui i se adreseaza, ce ton cere " +
-    "si unde va fi ascultat. Abia apoi intru in cabina. O voce potrivita nu " +
-    "e una care impresioneaza, ci una care serveste textul.",
+    "Îmi place să înțeleg întâi proiectul: cui i se adresează, ce ton cere " +
+    "și unde va fi ascultat. Abia apoi intru în cabină. O voce potrivită nu " +
+    "e una care impresionează, ci una care servește textul.",
 
-    "In paralel cu proiectele comerciale si de film, construiesc un canal " +
-    "de audiobook in limba romana, un loc unde cartile pot fi ascultate " +
-    "cap-coada. Este felul meu de a readuce lectura cu voce tare acolo unde ii e locul."
+    "În paralel cu proiectele comerciale și de film, construiesc un canal " +
+    "de audiobook în limba română, un loc unde cărțile pot fi ascultate " +
+    "cap-coadă. Este felul meu de a readuce lectura cu voce tare acolo unde îi e locul."
   ],
 
   aboutFacts: [
-    "Inregistrari in studio propriu",
-    "Livrare rapida a fisierelor",
-    "Limba romana, accent neutru",
-    "Reclame, film, animatie si audiobook"
+    "Înregistrări în studio propriu",
+    "Livrare rapidă a fișierelor",
+    "Limba română, accent neutru",
+    "Reclame, film, animație și audiobook"
   ]
 
 };
