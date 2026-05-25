@@ -16,10 +16,17 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="brand"><span class="dot"></span><span data-field="name">Tudor Runcanu</span></a>
-      <button class="nav-toggle" aria-label="Meniu">&#9776;</button>
+      <button class="nav-toggle" aria-label="Meniu" aria-expanded="false">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Acasa</a></li>
-        <li><a href="portofoliu.html" class="active">Portofoliu</a></li>
+        <li class="has-sub">
+          <a href="portofoliu.html" class="active">Portofoliu</a>
+          <ul class="subnav">
+            <li><a href="comercial.html">Comercial</a></li>
+            <li><a href="film-animatie.html">Film &amp; Animatie</a></li>
+            <li><a href="audiobooks.html">Audiobook</a></li>
+          </ul>
+        </li>
         <li><a href="despre.html">Despre</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -34,7 +41,7 @@
     </div>
   </header>
 
-  <section class="section" style="padding-top:32px;">
+  <section class="section tight">
     <div class="wrap">
       <div class="grid grid-3">
         <a href="comercial.html" class="area">

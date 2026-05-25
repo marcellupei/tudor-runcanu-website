@@ -1,8 +1,8 @@
 # Ghid de editare a site-ului
 
 Acest ghid e pentru Tudor. Nu ai nevoie de cunostinte tehnice.
-Tot ce apare pe site (text, demo-uri, videoclipuri) se schimba dintr-un
-singur fisier: **`content.js`**.
+Tot ce apare pe site (text, demo-uri, videoclipuri, fotografie) se schimba
+dintr-un singur fisier: **`content.js`**.
 
 Dupa ce salvezi o modificare, site-ul se actualizeaza singur in aproximativ
 un minut.
@@ -35,19 +35,19 @@ Site-ul sta pe GitHub. Poti edita totul din browser, fara sa instalezi nimic.
 
 Fisierul are sase parti, marcate clar cu titluri:
 
-1. **Datele de baza** — nume, rol, email, telefon, linkuri retele sociale.
-2. **Prima pagina** — textul introductiv de pe Acasa.
-3. **Comercial** — descriere, tipuri de proiecte si demo-uri pentru reclame.
-4. **Film & Animatie** — descriere, tipuri de proiecte si demo-uri pentru film.
-5. **Audiobook** — numele canalului si videoclipurile de pe YouTube.
-6. **Despre** — paragrafele de pe pagina Despre.
+1. **Datele de baza** -- nume, rol, email, telefon, fotografie, retele sociale.
+2. **Prima pagina** -- textul de pe Acasa.
+3. **Comercial** -- descriere, tipuri de proiecte si demo-uri.
+4. **Film & Animatie** -- descriere, tipuri de proiecte si demo-uri.
+5. **Audiobook** -- numele canalului si videoclipurile de pe YouTube.
+6. **Despre** -- paragrafele de pe pagina Despre.
 
 ---
 
 ## Cum adaugi un demo (Comercial sau Film)
 
-Demo-urile stau in doua locuri: in sectiunea **`comercial`** (la `demos`)
-si in sectiunea **`film`** (la `demos`). Functioneaza la fel.
+Demo-urile stau in doua locuri: in sectiunea `comercial` (la `demos`) si in
+sectiunea `film` (la `demos`). Functioneaza la fel.
 
 Un demo poate fi un **fisier audio** sau un **videoclip YouTube**.
 
@@ -102,8 +102,21 @@ In sectiunea **`audiobooks`** gasesti blocuri de forma:
 ```
 
 Copiaza un bloc, modifica `title` si `author`, si pune la `src` linkul
-complet de YouTube. Orice forma de link merge:
-`https://www.youtube.com/watch?v=...` sau `https://youtu.be/...`.
+complet de YouTube. Orice forma de link merge.
+
+---
+
+## Cum adaugi fotografia ta (pagina Despre)
+
+1. Pe github.com intra in folderul **`assets`**.
+2. Apasa **Add file -> Upload files** si urca poza (ex: `tudor.jpg`).
+3. Apasa **Commit changes**.
+4. In `content.js`, sus, la campul `photo`, scrie numele fisierului:
+   `photo: "assets/tudor.jpg"`.
+
+Cat timp campul `photo` e gol `""`, locul fotografiei ramane ascuns, deci
+pagina arata bine si fara poza. O poza portret verticala, cu lumina buna,
+arata cel mai bine.
 
 ---
 
@@ -127,5 +140,6 @@ apare pe site.
 
 ---
 
-Daca te blochezi, scrie-i lui Marcel. Modificarile vechi raman salvate pe
-GitHub, asa ca nimic nu se pierde.
+Tot continutul de care e nevoie e strans in documentul de brief din Google
+Drive, primit de la Marcel. Daca te blochezi, scrie-i lui. Modificarile
+vechi raman salvate pe GitHub, asa ca nimic nu se pierde.

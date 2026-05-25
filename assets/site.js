@@ -13,14 +13,12 @@
     return String(s == null ? "" : s)
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
-  /* resolve "comercial.intro" against the SITE object */
   function get(path) {
     return path.split(".").reduce(function (o, k) {
       return (o == null) ? undefined : o[k];
     }, S);
   }
 
-  /* ---- extract a YouTube video id from any common URL form ---- */
   function ytId(url) {
     if (!url) return "";
     var m = String(url).match(
@@ -39,7 +37,6 @@
            'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>';
   }
 
-  /* ---- text + link fields ---- */
   function fillFields() {
     $all("[data-field]").forEach(function (n) {
       var v = get(n.getAttribute("data-field"));
@@ -66,7 +63,12 @@
     });
   }
 
-  /* ---- service cards into [data-services="comercial"] ---- */
+  function n_path(box, attr) {
+    var key = box.getAttribute(attr);
+    var suffix = attr === "data-services" ? "services" : "demos";
+    return key + "." + suffix;
+  }
+
   function renderServices() {
     $all("[data-services]").forEach(function (box) {
       var items = (get(n_path(box, "data-services")) || []);
@@ -77,7 +79,6 @@
     });
   }
 
-  /* ---- demos into [data-demos="comercial"] ---- */
   function renderDemos() {
     $all("[data-demos]").forEach(function (box) {
       var demos = (get(n_path(box, "data-demos")) || []);
@@ -100,14 +101,6 @@
     });
   }
 
-  /* the attribute value is a path under SITE that ends in services/demos */
-  function n_path(box, attr) {
-    var key = box.getAttribute(attr);          /* e.g. "comercial" */
-    var suffix = attr === "data-services" ? "services" : "demos";
-    return key + "." + suffix;
-  }
-
-  /* ---- audiobook videos ---- */
   function renderAudiobooks() {
     var box = $("#audiobooks");
     if (!box) return;
@@ -124,7 +117,6 @@
     }).join("");
   }
 
-  /* ---- about ---- */
   function renderAbout() {
     var box = $("#aboutText");
     if (box) {
@@ -140,7 +132,18 @@
     }
   }
 
-  /* ---- footer social links ---- */
+  function renderPortrait() {
+    var fig = $("#portrait");
+    if (!fig) return;
+    var img = $("img", fig);
+    if (S.photo && img) {
+      img.setAttribute("src", S.photo);
+      img.setAttribute("alt", S.name || "Portret");
+    } else {
+      fig.classList.add("is-hidden");
+    }
+  }
+
   function renderSocial() {
     var box = $("#social");
     if (!box) return;
@@ -162,7 +165,9 @@
   }
 
   function setYear() {
-    $all("[data-year]").forEach(function (n) { n.textContent = new Date().getFullYear(); });
+    $all("[data-year]").forEach(function (n) {
+      n.textContent = new Date().getFullYear();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -171,6 +176,7 @@
     renderDemos();
     renderAudiobooks();
     renderAbout();
+    renderPortrait();
     renderSocial();
     navToggle();
     setYear();

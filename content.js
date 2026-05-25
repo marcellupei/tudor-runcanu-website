@@ -28,8 +28,13 @@ window.SITE = {
   phone: "07xx xxx xxx",
   city: "Romania",
 
+  // Fotografie portret (apare pe pagina Despre).
+  // Urca fisierul in folderul assets/ si scrie numele aici, ex: "assets/tudor.jpg"
+  // Lasa gol ""  daca nu ai inca o poza -- locul ramane ascuns.
+  photo: "",
+
   // Linkuri retele sociale -- lasa gol ""  daca nu ai unul
-  youtube:   "https://www.youtube.com/",   // canalul de audiobook
+  youtube:   "https://www.youtube.com/",
   instagram: "",
   facebook:  "",
   linkedin:  "",
@@ -48,18 +53,15 @@ window.SITE = {
      ============================================================ */
   comercial: {
 
-    // Scurta descriere folosita pe pagina de portofoliu
     summary:
       "Reclame, ghiduri video si materiale de business. Mesajul tau, " +
       "spus clar si in tonul potrivit pentru brand.",
 
-    // Textul introductiv de pe pagina Comercial
     intro:
       "O reclama buna se aude o data si se tine minte. Inregistrez voce " +
       "pentru spoturi, video-uri explicative si materiale interne, in tonul " +
       "potrivit pentru publicul si momentul tau.",
 
-    // Tipuri de proiecte comerciale
     services: [
       {
         title: "Reclame radio & TV",
@@ -87,8 +89,6 @@ window.SITE = {
       }
     ],
 
-    // Demo-uri.  kind: "audio"  ->  src este un fisier din folderul audio/
-    //            kind: "youtube" ->  src este un link YouTube
     demos: [
       {
         title: "Demo reclame",
@@ -164,7 +164,7 @@ window.SITE = {
      5. AUDIOBOOK  --  canalul de YouTube
      ============================================================ */
 
-  channelName: "Numele Canalului",   // <-- pune aici numele canalului
+  channelName: "Numele Canalului",
 
   channelSummary:
     "Carti citite cap-coada, in limba romana, gratuit pe YouTube.",
@@ -174,7 +174,6 @@ window.SITE = {
     "Capitole intregi, povesti si literatura, pentru oricine vrea sa " +
     "asculte o carte buna.",
 
-  // Videoclipurile de pe canal. Pune linkul YouTube complet la "src".
   audiobooks: [
     {
       title: "Titlul cartii sau al capitolului",
@@ -190,8 +189,6 @@ window.SITE = {
 
 
   /* ---------- 6. PAGINA DESPRE ---------- */
-  // Fiecare paragraf este un text intre ghilimele, separat prin virgula.
-  // Poti adauga un paragraf personal despre experienta ta intre celelalte.
 
   aboutHeading: "Despre",
   aboutText: [
