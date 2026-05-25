@@ -1,0 +1,12 @@
+# Netlify deploy config
+# Site static, fara build step. Netlify serveste fisierele direct din root.
+
+[build]
+  publish = "."
+  command = ""
+
+# Pagini de eroare prietenoase (optional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
